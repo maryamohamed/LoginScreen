@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/eTUserName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="207dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/eTPassword"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/eTUserName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="-320dp"
+        android:backgroundTint="@color/grey"
+        android:text="LOGIN"
+        android:textColor="@color/green"
+        app:cornerRadius="0dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Not a member?Sign up now"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>
